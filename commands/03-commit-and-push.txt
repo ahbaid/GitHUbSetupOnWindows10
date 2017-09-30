@@ -1,0 +1,130 @@
+ahbaidg@ahbaid MINGW32 /x/AHBAID/git (master)
+$ ls -al
+total 37812
+drwxr-xr-x 1 ahbaidg 197121        0 Sep 30 13:21 ./
+drwxr-xr-x 1 ahbaidg 197121        0 Sep 30 13:16 ../
+drwxr-xr-x 1 ahbaidg 197121        0 Sep 30 13:20 .git/
+drwxr-xr-x 1 ahbaidg 197121        0 Sep 30 12:50 commands/
+-rwxr-xr-x 1 ahbaidg 197121 38569136 Sep 30 11:15 Git-2.14.2-32-bit.exe*
+drwxr-xr-x 1 ahbaidg 197121        0 Sep 30 13:19 github/
+drwxr-xr-x 1 ahbaidg 197121        0 Sep 30 13:21 GitHUbSetupOnWindows10/
+drwxr-xr-x 1 ahbaidg 197121        0 Sep 30 12:40 screen-shots/
+
+ahbaidg@ahbaid MINGW32 /x/AHBAID/git (master)
+$ cd GitHUbSetupOnWindows10/
+
+ahbaidg@ahbaid MINGW32 /x/AHBAID/git/GitHUbSetupOnWindows10 (master)
+$ mv ../commands .
+
+ahbaidg@ahbaid MINGW32 /x/AHBAID/git/GitHUbSetupOnWindows10 (master)
+$ mv ../screen-shots .
+
+ahbaidg@ahbaid MINGW32 /x/AHBAID/git/GitHUbSetupOnWindows10 (master)
+$ mv ../github .
+
+ahbaidg@ahbaid MINGW32 /x/AHBAID/git/GitHUbSetupOnWindows10 (master)
+$ ls -al
+total 25
+drwxr-xr-x 1 ahbaidg 197121  0 Sep 30 13:25 ./
+drwxr-xr-x 1 ahbaidg 197121  0 Sep 30 13:25 ../
+drwxr-xr-x 1 ahbaidg 197121  0 Sep 30 13:21 .git/
+drwxr-xr-x 1 ahbaidg 197121  0 Sep 30 13:24 commands/
+drwxr-xr-x 1 ahbaidg 197121  0 Sep 30 13:19 github/
+-rw-r--r-- 1 ahbaidg 197121 82 Sep 30 13:21 README.md
+drwxr-xr-x 1 ahbaidg 197121  0 Sep 30 12:40 screen-shots/
+ahbaidg@ahbaid MINGW32 /x/AHBAID/git/GitHUbSetupOnWindows10 (master)
+$ pwd
+/x/AHBAID/git/GitHUbSetupOnWindows10
+
+ahbaidg@ahbaid MINGW32 /x/AHBAID/git/GitHUbSetupOnWindows10 (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        commands/
+        github/
+        screen-shots/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ahbaidg@ahbaid MINGW32 /x/AHBAID/git/GitHUbSetupOnWindows10 (master)
+$ git add .
+
+ahbaidg@ahbaid MINGW32 /x/AHBAID/git/GitHUbSetupOnWindows10 (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+        new file:   commands/01-ssh-keys-generation.rtf
+        new file:   commands/01-ssh-keys-generation.txt
+        new file:   commands/02-clone-repository.rtf
+        new file:   commands/02-clone-repository.txt
+        new file:   github/01-github-settings.png
+        new file:   github/02-github-newkey.png
+        new file:   github/03-github-newkey.png
+        new file:   github/04-github-sshkeys.png
+        new file:   github/05-github-clone-ssh.png
+        new file:   screen-shots/01-git-download.png
+        new file:   screen-shots/02-git-installer.png
+        new file:   screen-shots/03-git-installer-options.png
+        new file:   screen-shots/04-git-installer-gitbash.png
+        new file:   screen-shots/05-git-installer-openssh.png
+        new file:   screen-shots/06-git-installer-openssl.png
+        new file:   screen-shots/07-git-installer-crlf-unix.png
+        new file:   screen-shots/08-git-installer-MinTTY.png
+        new file:   screen-shots/09-git-installer-extra-options.png
+        new file:   screen-shots/10-git-installer-running.png
+        new file:   screen-shots/11-git-installer-done.png
+
+ahbaidg@ahbaid MINGW32 /x/AHBAID/git/GitHUbSetupOnWindows10 (master)
+$ git commit -m "Setting up new files"
+*** Please tell me who you are.
+Run
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+fatal: unable to auto-detect email address (got 'ahbaidg@ahbaid.(none)')
+
+ahbaidg@ahbaid MINGW32 /x/AHBAID/git/GitHUbSetupOnWindows10 (master)
+$ git config --global user.email "ahbaid@gmail.com"
+
+ahbaidg@ahbaid MINGW32 /x/AHBAID/git/GitHUbSetupOnWindows10 (master)
+$ git config --global user.name "Ahbaid Gaffoor"
+ahbaidg@ahbaid MINGW32 /x/AHBAID/git/GitHUbSetupOnWindows10 (master)
+$ git commit -m "Setting up new files"
+[master ed4a1cc] Setting up new files
+ 20 files changed, 102 insertions(+)
+ create mode 100644 commands/01-ssh-keys-generation.rtf
+ create mode 100644 commands/01-ssh-keys-generation.txt
+ create mode 100644 commands/02-clone-repository.rtf
+ create mode 100644 commands/02-clone-repository.txt
+ create mode 100644 github/01-github-settings.png
+ create mode 100644 github/02-github-newkey.png
+ create mode 100644 github/03-github-newkey.png
+ create mode 100644 github/04-github-sshkeys.png
+ create mode 100644 github/05-github-clone-ssh.png
+ create mode 100644 screen-shots/01-git-download.png
+ create mode 100644 screen-shots/02-git-installer.png
+ create mode 100644 screen-shots/03-git-installer-options.png
+ create mode 100644 screen-shots/04-git-installer-gitbash.png
+ create mode 100644 screen-shots/05-git-installer-openssh.png
+ create mode 100644 screen-shots/06-git-installer-openssl.png
+ create mode 100644 screen-shots/07-git-installer-crlf-unix.png
+ create mode 100644 screen-shots/08-git-installer-MinTTY.png
+ create mode 100644 screen-shots/09-git-installer-extra-options.png
+ create mode 100644 screen-shots/10-git-installer-running.png
+ create mode 100644 screen-shots/11-git-installer-done.png
+
+ahbaidg@ahbaid MINGW32 /x/AHBAID/git/GitHUbSetupOnWindows10 (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
