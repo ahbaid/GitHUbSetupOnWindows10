@@ -1,0 +1,28 @@
+ahbaidg@ahbaid MINGW32 /x/AHBAID/git
+$ pwd
+/x/AHBAID/git
+
+ahbaidg@ahbaid MINGW32 /x/AHBAID/git
+$ git init
+Initialized empty Git repository in X:/AHBAID/git/.git/
+
+ahbaidg@ahbaid MINGW32 /x/AHBAID/git (master)
+$ git clone git@github.com:ahbaid/GitHUbSetupOnWindows10.git
+Cloning into 'GitHUbSetupOnWindows10'...
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+ahbaidg@ahbaid MINGW32 /x/AHBAID/git (master)
+$ ls -al
+total 37812
+drwxr-xr-x 1 ahbaidg 197121        0 Sep 30 13:21 ./
+drwxr-xr-x 1 ahbaidg 197121        0 Sep 30 13:16 ../
+drwxr-xr-x 1 ahbaidg 197121        0 Sep 30 13:20 .git/
+drwxr-xr-x 1 ahbaidg 197121        0 Sep 30 12:50 commands/
+-rwxr-xr-x 1 ahbaidg 197121 38569136 Sep 30 11:15 Git-2.14.2-32-bit.exe*
+drwxr-xr-x 1 ahbaidg 197121        0 Sep 30 13:19 github/
+drwxr-xr-x 1 ahbaidg 197121        0 Sep 30 13:21 GitHUbSetupOnWindows10/
+drwxr-xr-x 1 ahbaidg 197121        0 Sep 30 12:40 screen-shots/
+

@@ -1,0 +1,74 @@
+ahbaidg@ahbaid MINGW32 ~
+$ pwd
+/c/Users/ahbaidg
+
+ahbaidg@ahbaid MINGW32 ~
+$ mkdir -p .ssh
+
+ahbaidg@ahbaid MINGW32 ~
+$ ssh-keygen.exe -t rsa
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/ahbaidg/.ssh/id_rsa): github_rsa
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in github_rsa.
+Your public key has been saved in github_rsa.pub.
+The key fingerprint is:
+SHA256:F0VXERJ5RfIWVdsxGXob/d9K93+HP4b9fwKDLpVp4HE ahbaidg@ahbaid
+The key's randomart image is:
++---[RSA 2048]----+
+|           .oo=X#|
+|           . oo=B|
+|          .  ..+=|
+|        o E.  ..+|
+|       .S+.+   ..|
+|        ..* o   o|
+|         +   o+.+|
+|        . .  oo*=|
+|         .    oo#|
++----[SHA256]-----+
+
+ahbaidg@ahbaid MINGW32 ~
+$ ls -al github*
+-rw-r--r-- 1 ahbaidg 197121 1679 Sep 30 12:45 github_rsa
+-rw-r--r-- 1 ahbaidg 197121  396 Sep 30 12:45 github_rsa.pub
+
+ahbaidg@ahbaid MINGW32 ~
+$ mv github* .ssh
+
+ahbaidg@ahbaid MINGW32 ~
+$ cd .ssh; pwd
+/c/Users/ahbaidg/.ssh
+
+ahbaidg@ahbaid MINGW32 ~/.ssh
+$ ls -al
+total 21
+drwxr-xr-x 1 ahbaidg 197121    0 Sep 30 12:45 ./
+drwxr-xr-x 1 ahbaidg 197121    0 Sep 30 12:45 ../
+-rw-r--r-- 1 ahbaidg 197121 1679 Sep 30 12:45 github_rsa
+-rw-r--r-- 1 ahbaidg 197121  396 Sep 30 12:45 github_rsa.pub
+
+ahbaidg@ahbaid MINGW32 ~/.ssh
+$ cat github_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC7mXqWjmIaD8p7Lmhgycw8Iscy3knMsXntkET6JkP1ikwSwUuMdi8m+hdaCfp6U+be1hqvvRa6uWAlPrSbtd6a7BvPyc2O6nppAMiZgsQj7iXfKtpWHPY7K83h9NxtsY6+sb2Oc0QpXZCOzXjUz32b+4ZE6tTTIPkMLGyWXsSoX2H0RXe4pfsqREKbpFPCx8pYa2CcPWzLfGZeGgK77EqOw/8o3LWBq7unC3fMjCqCC7gOY2uzJbK1UBW5I/gWXK0jpH/06IvLhecegKusH8EJ5nbBLMxxiv6SAtVSSmlfKErO7xDK6TIQs1lfeG0nnFoIXELTnkMPpgqtYDnMGYpB ahbaidg@ahbaid
+
+ahbaidg@ahbaid MINGW32 ~/.ssh
+$ cat ~/.ssh/config
+Host github.com
+   HostName github.com
+   IdentityFile ~/.ssh/github_rsa
+
+ahbaidg@ahbaid MINGW32 ~/.ssh
+$ cd
+
+ahbaidg@ahbaid MINGW32 ~
+$ pwd
+/c/Users/ahbaidg
+
+ahbaidg@ahbaid MINGW32 ~
+$ ssh git@github.com
+PTY allocation request failed on channel 0
+Hi ahbaid! You've successfully authenticated, but GitHub does not provide shell access.
+Connection to github.com closed.
+
+git@github.com:ahbaid/GitHUbSetupOnWindows10.git
